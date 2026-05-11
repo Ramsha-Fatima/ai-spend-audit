@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
-import { v4 as uuidv4 } from "uuid";
+
 
 import { pricing } from "./lib/pricing";
 import { supabase } from "./lib/supabase";
@@ -142,7 +142,7 @@ export default function SpendForm() {
       totalCurrent -
       totalSuggested;
 
-    const auditId = uuidv4();
+    const auditId = crypto.randomUUID();
 
     // Frontend result
     setResult({
