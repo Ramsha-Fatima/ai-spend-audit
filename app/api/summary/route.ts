@@ -4,8 +4,8 @@ export async function POST(req: Request) {
 
     const summary = `
 Your AI stack has optimization opportunities.
-Consider switching smaller teams to lower-cost plans
-to reduce monthly spend and improve efficiency.
+Consider switching to lower-cost plans
+to reduce monthly spend.
 `;
 
     return Response.json({
